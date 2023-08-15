@@ -74,4 +74,10 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+
+'''
+    Note for production:
+        - change static root path with absolute path on vps/dedicated server
+'''
 STATIC_URL = '/static/'
+STATIC_ROOT = "/Backup Lenovo/UBAID/Yfinance/static/"
