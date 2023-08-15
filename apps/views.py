@@ -8,4 +8,4 @@ from django.views.decorators.cache import cache_control
 class Landing(View):
 
     def main(request):
-        return HttpResponse(status=200)
+        return render(request, 'dashboard.html')

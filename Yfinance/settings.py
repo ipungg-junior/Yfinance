@@ -80,4 +80,9 @@ USE_TZ = True
         - change static root path with absolute path on vps/dedicated server
 '''
 STATIC_URL = '/static/'
-STATIC_ROOT = "/Backup Lenovo/UBAID/Yfinance/static/"
+#STATIC_ROOT = "/Backup Lenovo/UBAID/Yfinance/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# during development add this line
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
